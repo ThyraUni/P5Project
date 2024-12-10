@@ -1,0 +1,1324 @@
+/* @media screen and (max-width: 700px) { */
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+    --gelap: #0F253B;
+    --secondary: #0C1E2F;
+    --tengah: #263849;
+    --object: #B0B4B7;
+    --terang: #B7BEC5;
+    scroll-behavior: smooth;
+}
+
+/* selector animation*/
+.fadeIn {
+    animation: fadeIn 600ms ease 1 normal both;
+}
+
+/* body */
+body::-webkit-scrollbar {
+    display: none
+}
+
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: #808080;
+}
+
+.dekstop {
+    display: none;
+}
+
+
+/* tersembunyi */
+#pemelai,
+#quotes,
+#gallery,
+#rsvp-ucapan,
+#event {
+    display: none;
+}
+
+#cover {
+    background-color: var(--gelap);
+    height: 852px;
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+}
+
+/* header */
+#header {
+    width: 393px;
+    height: 415px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.akusigma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    pointer-events: none;
+}
+
+
+#header>#bungkus {
+    position: relative;
+    width: 193px;
+    height: 220px;
+    margin-top: 40px;
+
+    #bingkai {
+        background-color: var(--object);
+        border-radius: 100px 100px 0 0;
+        width: 193px;
+        height: 193px;
+        border: 2px solid var(--tengah);
+        box-shadow: inset 0.1px 4px 4px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 25px;
+        left: 0;
+    }
+}
+
+#foto {
+    width: 157px;
+    height: 220px;
+    position: absolute;
+    top: 0px;
+    left: 18px;
+}
+
+#text-cover {
+    position: relative;
+    width: 100%;
+
+    .nama-pengantin {
+        font-family: Imperial Script;
+        font-size: 64px;
+        color: var(--terang);
+        margin-left: 8px;
+    }
+
+    .tanggal-header {
+        font-family: Cormorant Infant;
+        font-size: 32px;
+        color: var(--terang);
+        font-weight: bolder;
+    }
+}
+
+.nama-pengantin,
+.tanggal-header {
+    text-align: center;
+    margin: 14px;
+}
+
+
+
+/* header */
+/* isi */
+#main {
+    width: 393px;
+    height: 435px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.background {
+    background-color: rgba(25, 25, 25, 0.9);
+    border-radius: 12px;
+    width: 339px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    padding: 44px 0;
+    box-sizing: border-box;
+}
+
+
+.yth,
+.namatamu {
+    margin: 2px;
+    color: var(--terang);
+
+}
+
+.yth {
+    font-family: Cormorant Infant;
+    font-size: 1.3rem;
+}
+
+.namatamu {
+    font-family: Imperial Script;
+    font-size: 2rem;
+}
+
+.bukaundangan {
+    margin-top: 40px;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px 5px rgba(249, 210, 214, 0.1);
+    font-size: 20px;
+    font-family: Cormorant Infant;
+    background-color: var(--object);
+    color: var(--gelap);
+    z-index: 2;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/* isi */
+
+/* quotes */
+#quotes {
+    background-color: var(--secondary);
+    height: 852px;
+    width: 393px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#quotes>#bungkus {
+    height: 100%;
+    width: auto;
+    padding: 144px 36px;
+    align-items: center;
+    position: relative;
+
+}
+
+#quotes>#bungkus>.katamutiara {
+    font-family: IM Fell English SC;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--terang);
+}
+
+
+
+/* quotes */
+
+/* pemelai */
+#pemelai {
+    background-color: var(--gelap);
+    height: 1470px;
+    width: 393px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
+#pemelai>#bungkus {
+    width: 100%;
+    height: auto;
+    padding: 36px 20px;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#pemelai>#bungkus>.al-quran {
+    width: 100%;
+    height: 290px;
+
+    p {
+        color: var(--terang);
+    }
+}
+
+#pemelai>#bungkus>.al-quran>hr {
+    border: 2px solid var(--object);
+}
+
+.ayat {
+    text-align: center;
+    color: var(--terang);
+}
+
+
+.ayat>.isi:nth-child(1) {
+    margin-top: 3.5%;
+}
+
+
+#pemelai>#bungkus>h1 {
+    text-align: center;
+    margin: 0px 2px 0 0;
+    font-family: Imperial Script;
+    font-size: 54px;
+    color: var(--terang);
+}
+
+#bungkus>.pemelai-isi {
+    width: 304px;
+    height: auto;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 0;
+    background-color: rgba(25, 25, 25, 0.8);
+    border-radius: 36px;
+}
+
+#bungkus>.pemelai-isi>* {
+    z-index: 1;
+}
+
+.pemelai-isi>.foto {
+    width: 236px;
+    height: 236px;
+}
+
+.pemelai-isi>h5,
+p {
+    color: var(--terang);
+}
+
+.pemelai-isi>h5 {
+    font-size: 40px;
+    font-family: Imperial Script;
+    margin: 20px;
+}
+
+.pemelai-isi>p {
+    font-family: Cormorant Infant;
+    font-size: 16px;
+    margin: 0;
+}
+
+#bungkus>.pemelai-isi>.foto>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
+    object-fit: cover;
+}
+
+.pemelai-isi:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.icon-sosmed {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.icon-sosmed>a>.rectangle {
+    width: 32px;
+    height: 32px;
+    background-color: var(--terang);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 8px;
+    padding: 2px;
+    justify-content: space-between;
+}
+
+
+.icon-sosmed>a>.rectangle>img {
+    padding: 2px;
+}
+
+/* pemelai */
+
+/* event */
+#event {
+    background-color: var(--secondary);
+    height: 1580px;
+    width: 393px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
+#event>#bungkus {
+    width: 100%;
+    height: auto;
+    padding: 36px 20px;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#event>#bungkus>.event-header {
+    display: flex;
+    height: auto;
+    margin: auto 15px;
+}
+
+#event>#bungkus>.event-header>#text {
+    width: 100%;
+}
+
+#event>#bungkus>.event-header>#text>.a {
+    font-family: Cormorant Infant;
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--terang);
+}
+
+#event>#bungkus>.event-header>#text>.b {
+    font-family: Imperial Script;
+    font-size: 64px;
+    margin: -28px 0 0 -4px;
+    font-weight: 500;
+    color: var(--terang);
+}
+
+#event>#bungkus>.akadnikah> {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#event>#bungkus>.akadnikah>.gambar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#event>#bungkus>.akadnikah>.gambar>.isi {
+    z-index: 2;
+}
+
+#event>#bungkus>.akadnikah>.gambar>.border {
+    height: 275px;
+    width: 275px;
+    background-color: var(--object);
+    z-index: 1;
+    position: absolute;
+    top: 138px;
+    box-shadow: inset -5px 5px 2px rgba(0, 0, 0, 0.3), inset 5px -5px 2px rgba(61, 59, 59, 0.3);
+}
+
+#event>#bungkus>.akadnikah>.gambar>.isi>.kotak {
+    height: 234px;
+    width: 234px;
+    overflow: hidden;
+    margin: 35px 0 0 0;
+}
+
+#event>#bungkus>.akadnikah>.gambar>.isi>.kotak>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+#event>#bungkus>.akadnikah>.gambar>.isi>p {
+    font-family: Corinthia;
+    font-size: 44px;
+    margin: -46px 0 0 0;
+    text-align: center;
+    font-weight: 600;
+    color: var(--terang);
+    backdrop-filter: blur(5px);
+}
+
+#event>#bungkus>.akadnikah>.ketacara {
+    width: 324px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px auto 0 auto;
+    position: relative
+}
+
+#event>#bungkus>.akadnikah>.ketacara>.a {
+    font-size: 32px;
+    font-family: Cormorant Infant;
+    margin: 0;
+    font-weight: 600;
+    color: var(--terang);
+}
+
+#event>#bungkus>.akadnikah>.ketacara>.countdown {
+    width: 324px;
+    height: auto;
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#event>#bungkus>.akadnikah>.ketacara>.countdown>.box {
+    height: 75px;
+    width: 75px;
+    background-color: var(--tengah);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#event>#bungkus>.akadnikah>.ketacara>.countdown>.box>p {
+    font-family: Cormorant Infant;
+    font-size: 36px;
+    margin: auto 0 0 0;
+    font-weight: bold;
+    color: var(--terang);
+}
+
+#event>#bungkus>.akadnikah>.ketacara>.countdown>.box>span {
+    font-family: Cormorant Infant;
+    font-size: 20px;
+    margin: 0 auto 6px auto;
+    font-weight: bolder;
+    color: var(--terang);
+}
+
+
+#event>#bungkus>.akadnikah>.ketacara>.b {
+    font-size: 24px;
+    font-family: Cormorant Infant;
+    margin: 0;
+    font-weight: 600;
+    color: var(--terang);
+}
+
+#event>#bungkus>.akadnikah>.lokasi {
+    height: auto;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+}
+
+#event>#bungkus>.akadnikah>.lokasi>p {
+    margin: 0;
+    font-size: 24px;
+    font-family: Cormorant Infant;
+    font-weight: 600;
+    color: var(--terang);
+}
+
+#event>#bungkus>.akadnikah>.lokasi>a>button {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-family: Cormorant Infant;
+    border-radius: 8px;
+    background-color: var(--object);
+    color: var(--gelap);
+    font-weight: bold;
+}
+
+#event>#bungkus>.resepsi {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 69px auto 0 auto;
+}
+
+#event>#bungkus>.resepsi>.isi {
+    height: auto;
+    width: 353px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#event>#bungkus>.resepsi>.isi>.gambar {
+    width: 353px;
+    height: 293px;
+    position: relative;
+    mix-blend-mode: hard-light;
+}
+
+#event>#bungkus>.resepsi>.isi>.gambar>.a {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: var(--object);
+    z-index: 2;
+    font-family: Corinthia;
+    font-size: 44px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+#event>#bungkus>.resepsi>.isi>.gambar>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#event>#bungkus>.resepsi>.ketacara {
+    background-color: var(--tengah);
+    width: 353px;
+    height: 93px;
+    border-radius: 0px 0px 75px 75px;
+    padding: 10px 0;
+    display: grid;
+    place-items: center;
+    margin-top: -20px;
+    z-index: 3;
+}
+
+#event>#bungkus>.resepsi>.ketacara>.a {
+    margin: 0;
+    font-size: 24px;
+    font-family: Cormorant Infant;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--terang);
+}
+
+#event>#bungkus>.resepsi>.ketacara>.b,
+.c {
+    margin: 0;
+    font-size: 20px;
+    font-family: Cormorant Infant;
+    text-align: center;
+    font-weight: bold;
+    color: var(--terang);
+}
+
+#event>#bungkus>.maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+}
+
+#event>#bungkus>.maps>a>button {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-family: Cormorant Infant;
+    border-radius: 8px;
+    background-color: var(--object);
+    color: var(--gelap);
+    font-weight: bold;
+}
+
+#event>#bungkus>.maps>.isi {
+    height: 200px;
+    width: 200px;
+    margin: 8px auto 8px auto;
+    z-index: 10;
+    border: 4px solid var(--object);
+}
+
+
+
+
+/* event */
+/* gallery */
+#gallery {
+    background-color: var(--gelap);
+    height: 1095px;
+    width: 393px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
+#gallery>#bungkus {
+    width: 100%;
+    height: auto;
+    padding: 36px 20px;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#gallery .our-gallery {
+    position: relative;
+
+    h1 {
+        color: var(--terang);
+    }
+}
+
+#gallery .video {
+    width: 353px;
+    height: 198px;
+    margin: 30px auto 0 auto;
+    box-sizing: border-box;
+}
+
+#gallery video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#gallery .foto {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .slider {
+    width: 330px;
+    max-width: 100vw;
+    height: 240px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    top: 11px;
+}
+
+#gallery .slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+#gallery .slider .list img {
+    width: 330px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery .slider .buttons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gallery .slider .buttons button {
+    padding: 10px;
+    background-color: var(--tengah);
+    color: var(--terang);
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    align-self: center;
+}
+
+#gallery .slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: var(--object);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#gallery .slider .dots li {
+    list-style: none;
+    width: 5px;
+    height: 5px;
+    background-color: var(--tengah);
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#gallery .slider .dots li.active {
+    width: 15px;
+}
+
+
+#gallery .foto>.border {
+    width: 353px;
+    height: 263px;
+    background-color: var(--tengah);
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+}
+
+#gallery .livestreaming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .livestreaming h1 {
+    margin: 0;
+    color: var(--terang);
+}
+
+#gallery .livestreaming p {
+    margin: 10px 0 20px 0;
+    font-family: Cormorant Infant;
+    color: var(--terang);
+    font-weight: 600;
+}
+
+#gallery .livestreaming .live {
+    width: 353px;
+    height: 198px;
+}
+
+#gallery .livestreaming a>button {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-family: Cormorant Infant;
+    border-radius: 8px;
+    background-color: var(--object);
+    color: var(--gelap);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#gallery h1,
+h2,
+p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gallery h1 {
+    font-family: Imperial Script;
+    font-size: 54px;
+}
+
+#gallery .isi>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* gallery */
+
+/* gallery */
+/* rsvp-ucapan */
+#rsvp-ucapan {
+    background-color: var(--secondary);
+    height: 1600px;
+    width: 393px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    z-index: 0;
+    padding-bottom: 66px;
+}
+
+
+
+#rsvp-ucapan>#bungkus {
+    width: 100%;
+    height: 1600px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    hr {
+        width: 80%;
+        margin: 0;
+        background-color: var(--);
+        height: 1.6px;
+        pointer-events: none;
+    }
+}
+
+#rsvp-ucapan>#bungkus>h1 {
+    font-family: Imperial Script;
+    font-size: 54px;
+    text-align: center;
+    color: var(--terang);
+}
+
+#rsvp-ucapan>#bungkus>.form {
+    width: 353px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 40px 0;
+}
+
+#rsvp-ucapan>#bungkus>.form>form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 320px;
+    margin: auto;
+}
+
+#rsvp-ucapan>#bungkus>.form>form>label {
+    font-family: Cormorant Infant;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--terang);
+    margin: 0;
+    text-align: start;
+}
+
+#rsvp-ucapan>#bungkus>.form>form>input {
+    height: 30px;
+    background-color: var(--terang);
+}
+
+#rsvp-ucapan>#bungkus>.form>form>select {
+    height: 35px;
+    background-color: var(--terang);
+}
+
+#rsvp-ucapan>#bungkus>.form>form>textarea {
+    height: 60px;
+    background-color: var(--terang);
+}
+
+#rsvp-ucapan>#bungkus>.form>form>button {
+    justify-content: first baseline;
+    width: 107px;
+    height: 36px;
+    border-radius: 8px;
+    font-family: Cormorant Infant;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--gelap);
+    background-color: var(--terang);
+
+}
+
+#rsvp-ucapan>#bungkus>.amplop {
+    width: 353px;
+    height: 510px;
+    padding: 30px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital h1 {
+    font-size: 54px;
+    font-family: Imperial Script;
+    margin: 0;
+    line-height: 56px;
+    color: var(--terang);
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital p {
+    font-size: 14px;
+    font-family: Cormorant Infant;
+    margin-top: 25px;
+    color: var(--terang);
+    font-weight: 600;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital>.bank {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital>.bank div {
+    background-color: var(--object);
+    height: 120px;
+    width: 115px;
+    border-bottom: 3px solid var(--tengah);
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital>.bank div>svg {
+    margin: 8px 0 4px 0;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital>.bank div>p {
+    font-size: 14px;
+    font-family: Cormorant Infant;
+    margin: 0;
+    color: var(--gelap);
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital>.bank div>button {
+    width: 90px;
+    height: 25px;
+    padding: 4px 2px;
+    text-align: center;
+    margin: 25px 0 0 0;
+    border-radius: 2px;
+    background-color: var(--gelap);
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.digital>.bank div>button>p {
+    font-size: 12px;
+    font-family: Cormorant Infant;
+    line-height: 12px;
+    margin: 0;
+    color: var(--terang);
+    font-weight: bolder;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.fisik {
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.fisik h1 {
+    font-size: 54px;
+    font-family: Imperial Script;
+    margin: 0;
+    line-height: 56px;
+    color: var(--terang);
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.fisik p {
+    font-size: 14px;
+    font-family: Cormorant Infant;
+    margin-top: 25px;
+    color: var(--terang);
+    font-weight: 600;
+}
+
+#rsvp-ucapan>#bungkus>.amplop>.fisik button {
+    width: 271px;
+    height: 44px;
+    font-size: 16px;
+    font-family: Cormorant Infant;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: var(--object);
+    color: var(--gelap);
+    font-weight: bold;
+}
+
+/* rsvp-ucapan */
+/* penutup */
+#rsvp-ucapan>#bungkus>.penutup {
+    height: auto;
+    width: 90%;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--terang);
+    z-index: -100;
+    border-radius: 30px;
+}
+
+#rsvp-ucapan>#bungkus>.penutup>h1 {
+    font-size: 54px;
+    font-family: Imperial Script;
+    line-height: 56px;
+    margin: 0;
+    color: var(--gelap);
+}
+
+#rsvp-ucapan>#bungkus>.penutup>p {
+    font-family: IM FELL English SC;
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--gelap);
+}
+
+#rsvp-ucapan>#bungkus>.penutup>p:nth-child(2) {
+    margin: 10px 0 23.5px 0;
+}
+
+#rsvp-ucapan>#bungkus>.penutup>p:nth-child(4) {
+    margin: 23.5px 0 24px 0;
+}
+
+
+#rsvp-ucapan>#bungkus>.penutup>hr {
+    width: 246px;
+    background-color: var(--gelap);
+}
+
+#rsvp-ucapan>#bungkus>.penutup>.keluarga {
+    display: flex;
+    text-align: center;
+    height: 84px;
+    width: 321px;
+    justify-content: space-around;
+    margin: 0 auto 0 auto;
+}
+
+#rsvp-ucapan>#bungkus>.penutup>.keluarga div {
+    width: 155px;
+    background-color: var(--gelap);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rsvp-ucapan>#bungkus>.penutup>.keluarga div>p {
+    font-family: IM FELL English SC;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+    color: var(--terang);
+    font-weight: 100;
+}
+
+#rsvp-ucapan>#bungkus>.penutup>.keluarga div>h5 {
+    font-family: IM FELL English SC;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 8px 0 12px 0;
+    color: var(--terang);
+    font-weight: 100;
+}
+
+
+/* penutup */
+
+/* navbar */
+.navbar {
+    position: fixed;
+    z-index: 10;
+    background-color: var(--object);
+    bottom: 0;
+    width: 391px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px 12px 0 0;
+
+    .navbar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 9px 0;
+        display: flex;
+        flex-direction: row;
+        height: 49px;
+        width: 338px;
+        column-gap: 38px;
+        justify-content: center;
+    }
+
+    .nav-item {
+        width: 42px;
+        height: 47px;
+        box-sizing: border-box;
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 5rem;
+            color: var(--gelap);
+            text-decoration: none;
+            filter: grayscale(100%) opacity(0.7);
+            transition: var(--transition-speed);
+
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    .link-text {
+        display: block;
+        font-weight: bolder;
+        margin-top: 0.1rem;
+    }
+
+    .nav-link:hover {
+        filter: grayscale(0%) opacity(1);
+        background: var(--object);
+        color: var(--gelap);
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+/* navbar */
+
+
+/* } */
+
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    body>.dekstop {
+        position: sticky;
+        top: 0;
+        height: 100dvh;
+        width: 80%;
+        background-color: aqua;
+        margin-top: -7000px;
+        display: flex;
+        background: url(Image/dekstop\ image.webp);
+        box-shadow: inset 0 0 200px 20px rgba(255, 255, 255, 0.5);
+        background-size: cover;
+
+        .isi {
+            width: 100%;
+            height: auto;
+            text-align: left;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(10px);
+            padding: 0 8%;
+
+            .teks {
+                width: 100%;
+                min-width: 353px;
+                padding: 30px 30px;
+                box-sizing: border-box;
+                background-color: rgba(197, 190, 190, 0.4);
+                border-radius: 7px;
+                box-shadow: 0 0 300px black, inset 0 0 200px rgb(0, 0, 0);
+
+                h4,
+                h2,
+                q,
+                p,
+                h5 {
+                    text-align: start;
+                    color: var(--gelap);
+                }
+
+                h4 {
+                    font-size: 28px;
+                    font-family: Cormorant Infant;
+                    margin: 0;
+                }
+
+                h2 {
+                    font-size: 72px;
+                    font-family: Imperial Script;
+                    margin: 40px 0;
+                }
+
+                q {
+                    font-size: 24px;
+                    font-family: Cormorant Infant;
+                    margin: 0 0 0 0;
+                }
+
+                p {
+                    font-size: 28px;
+                    font-family: Cormorant Infant;
+                    margin: 40px 0 22px 0;
+                }
+
+                h5 {
+                    font-size: 42px;
+                    font-family: Imperial Script;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    body>.gattai {
+        grid-area: isi;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+
+
+}
